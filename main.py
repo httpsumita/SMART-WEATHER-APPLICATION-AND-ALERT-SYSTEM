@@ -2,15 +2,15 @@ import machine
 import urequests 
 from machine import Pin,ADC
 import network, time
-from dht import DHT11, InvalidChecksum
- 
+from dht import DHT11
+
 HTTP_HEADERS = {'Content-Type': 'application/json'} 
 THINGSPEAK_WRITE_API_KEY = 'CIXL0H98X94LP4TX'
 adc=machine.ADC(26)
 conversion_factor=100/65535
  
-ssid = 'moupia'
-password = 'abcdefgh'
+ssid = 'Redmi 11 Prime 5G'
+password = 'pranoy@2004'
  
 # Configure Pico W as Station
 sta_if=network.WLAN(network.STA_IF)
